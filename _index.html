@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Classic theme - jQuery Mobile Demos</title>
+        <link rel="stylesheet" href="src/jquery.mobile-1.4.2.min.css">
+        <script src="src/jquery.js"></script>
+        <script src="src/jquery.mobile-1.4.2.min.js"></script>
+        <script id="script" src="https://rawgithub.com/arschmitz/jquery-mobile-nestedlists/master/jquery.mobile.nestedlists.js"></script>
+    </head>
+    <body>
+        <div data-role="page" data-control-title="Home" id="page1">
+            <div data-role="content">
+                <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+                    data-controltype="image">
+                    <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+                </div>
+                <div data-html="true" data-js="#anotherPage">
+                    <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                        <li data-role="list-divider" data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child">菜单</li>
+                        <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit">点击你想看的菜，就可以看详细介绍。</li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">虾烧猴头菇
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上五楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">滑蛋虾仁
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上一楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">美白的白萝卜脊骨汤
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上二楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">白砍鸡
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上三楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">清炒地瓜叶
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上四楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-last-child ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">粤式清蒸鱼
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上五楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                <div data-role="navbar" class="ui-navbar" role="navigation">
+                    <ul class="ui-grid-b">
+                        <li class="ui-block-a"><a href="#" class="ui-link ui-btn">特色菜</a></li>
+                        <li class="ui-block-b"><a href="#" class="ui-btn-active ui-state-persist ui-link ui-btn">招牌菜</a></li>
+                        <li class="ui-block-c"><a href="#" class="ui-link ui-btn">甜品/主食</a></li>
+                    </ul>
+                </div>
+                <h4 style="display:none;" class="ui-title" role="heading" aria-level="1">Footer</h4>
+            </div>
+        </div>
+    </body>
+</html>

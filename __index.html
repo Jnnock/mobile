@@ -1,0 +1,207 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>手机网站</title>
+        <link rel="stylesheet" href="src/jquery.mobile-1.4.2.min.css">
+        <script src="src/jquery.js"></script>
+        <script src="src/swipe.js"></script>
+        <script src="src/jquery.mobile-1.4.2.min.js"></script>
+        <script id="script" src="src/jquery.mobile.nestedlists.js"></script>
+        <style>
+            .swipe {
+              overflow: hidden;
+              visibility: hidden;
+              position: relative;
+            }
+            .swipe-wrap {
+              overflow: hidden;
+              position: relative;
+            }
+            .swipe-wrap > div {
+              float:left;
+              width:100%;
+              position: relative;
+            }
+        </style>
+        <script type="text/javascript">
+        var slider = new Swipe(document.getElementById('slider'), {
+            startSlide: 3,
+            speed: 500,
+            auto: 4000,
+            callback: function(event, index, elem) {
+            // ...
+            }
+        });
+        </script>
+    </head>
+    <body>
+        <!-- HOME -->
+        <div data-role="page" data-control-title="Home" id="home">
+            <div data-role="content">
+                <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+        data-controltype="image">
+                    <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+                </div>
+                <div class="ui-grid-c" style="margin-top:20px">
+                    <div class="ui-block-a">
+                        <img src="http://www.bootcss.com/p/flat-ui/images/illustrations/clipboard.png" width="62" />
+                        <p>优点一</p>
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="http://www.bootcss.com/p/flat-ui/images/illustrations/infinity.png" width="62" />
+                        <p>优点二</p>
+                    </div>
+                    <div class="ui-block-c">
+                        <img src="http://www.bootcss.com/p/flat-ui/images/illustrations/map.png" width="62" />
+                        <p>优点三</p>
+                    </div>
+                    <div class="ui-block-d">
+                        <img src="http://www.bootcss.com/p/flat-ui/images/illustrations/time.png" width="62" />
+                        <p>优点四</p>
+                    </div>
+                </div>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="false">
+                        <h3>
+                            网络建设
+                        </h3>
+                        <p>
+                            Set of individual collapsibles
+
+This is an example of a series of individual collapsibles. The difference with a "Collapsible Set" is that multiple collapsible rows can be open at once.
+                        </p>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>
+                            运营托管
+                        </h3>
+                    </div>
+                    <div data-role="collapsible">
+                        <h3>
+                            客户见证
+                        </h3>
+                    </div>
+                </div>
+                <!--<div data-html="true" data-js="#anotherPage">
+                    <ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                        <li data-role="list-divider" data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child">菜单</li>
+                        <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit">点击你想看的菜，就可以看详细介绍。</li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">虾烧猴头菇
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上五楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">滑蛋虾仁
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上一楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">美白的白萝卜脊骨汤
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上二楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">白砍鸡
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上三楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">清炒地瓜叶
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上四楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="ui-li-static ui-body-inherit ui-last-child ui-btn ui-btn-icon-right ui-icon-carat-r" style="padding-top:15px;padding-bottom:15px">粤式清蒸鱼
+                            <ul>
+                                <div style="padding:12px">
+                                    <img src="http://pic4.zhimg.com/4ffa75bfeee079d723cab44c3cab5d2a_b.jpg" style="margin-left:auto" width="294" />
+                                    <hr/>
+                                    <h3>¥32</h3>
+                                    <p>清爽可口，延年益寿，一口气上五楼。</p>
+                                    <a href="#" class="ui-btn">加入已选菜单</a>
+                                </div>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>-->
+            </div>
+            
+            <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                <div data-role="navbar" class="ui-navbar" role="navigation">
+                    <ul class="ui-grid-b">
+                        <li class="ui-block-a"><a href="#" class="ui-btn-active ui-state-persist ui-link ui-btn">首页</a></li>
+                        <li class="ui-block-b"><a href="#example" data-transition="fade" class="ui-link ui-btn">案例展示</a></li>
+                        <li class="ui-block-c"><a href="#about" data-transition="fade" class="ui-link ui-btn">关于我们</a></li>
+                    </ul>
+                </div>
+                <h4 style="display:none;" class="ui-title" role="heading" aria-level="1">Footer</h4>
+            </div>
+        </div>
+        <!-- END HOME -->
+        <!-- EXAMPLE -->
+        <div data-role="page" data-control-title="Home" id="example">
+            <div data-role="content">
+                <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+            </div>
+            <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                <div data-role="navbar" class="ui-navbar" role="navigation">
+                    <ul class="ui-grid-b">
+                        <li class="ui-block-a"><a href="#home" data-transition="fade" class="ui-link ui-btn">首页</a></li>
+                        <li class="ui-block-b"><a href="#" class="ui-btn-active ui-state-persist ui-link ui-btn">案例展示</a></li>
+                        <li class="ui-block-c"><a href="#about" data-transition="fade" class="ui-link ui-btn">关于我们</a></li>
+                    </ul>
+                </div>
+                <h4 style="display:none;" class="ui-title" role="heading" aria-level="1">Footer</h4>
+            </div>
+        </div>
+        <!-- END EXAMPLE -->
+        <!-- ABOUT US -->
+        <div data-role="page" data-control-title="Home" id="about">
+            <div data-role="content">
+                <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+            </div>
+            <div data-role="footer" data-position="fixed" role="contentinfo" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                <div data-role="navbar" class="ui-navbar" role="navigation">
+                    <ul class="ui-grid-b">
+                        <li class="ui-block-a"><a href="#home" data-transition="fade" class="ui-link ui-btn">首页</a></li>
+                        <li class="ui-block-b"><a href="#example" data-transition="fade" class="ui-link ui-btn">案例展示</a></li>
+                        <li class="ui-block-c"><a href="#" class="ui-btn-active ui-state-persist ui-link ui-btn">关于我们</a></li>
+                    </ul>
+                </div>
+                <h4 style="display:none;" class="ui-title" role="heading" aria-level="1">Footer</h4>
+            </div>
+        </div>
+        <!-- END ABOUT US -->
+    </body>
+</html>
